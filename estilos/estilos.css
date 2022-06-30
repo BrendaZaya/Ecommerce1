@@ -6,132 +6,130 @@
   line-height: 1.75;
 }
 
-@media only screen and (min-width: 960px) {
-  header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: #fff;
-    position: relative;
-  }
-  header .navbar {
-    padding: 0 1.5rem;
-    text-align: center;
-    display: flex;
-    position: relative;
-    justify-content: center;
-  }
-  header .navbar .navbarLeft {
-    left: 0;
-    padding-right: 1.5rem;
-    display: flex;
-    justify-content: flex-end;
-  }
-  header .navbar .navbarLeft ul {
-    display: flex;
-    align-items: center;
-  }
-  header .navbar .navbarLeft ul li {
-    list-style: none;
-    padding: 0 2rem;
-    margin: 0;
-  }
-  header .navbar .navbarLeft ul li a {
-    display: block;
-    padding: 1.7rem 1.4rem;
-    font-size: 1em;
-  }
-  header .navbar .logo {
-    padding: 1rem 1rem;
-  }
-  header .navbar .logo img {
-    width: 6em;
-    height: 2.5em;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  header .navbar .navbarRight {
-    right: 0;
-    padding-left: 1.5rem;
-  }
-  header .navbar .navbarRight ul {
-    display: flex;
-    align-items: center;
-  }
-  header .navbar .navbarRight ul li {
-    list-style: none;
-    padding: 0 2rem;
-    margin: 0;
-  }
-  header .navbar .navbarRight ul li a {
-    display: block;
-    padding: 1.7rem 1.4rem;
-    font-size: 1em;
-  }
-  header .navbar .iconos a {
-    display: block;
-    padding: 1.7rem 1.4rem;
-    position: absolute;
-    right: 16px;
-  }
-  header .navbar .iconos a .icon {
-    display: block;
-    width: 1.15em;
-    height: 1.15em;
-  }
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  position: relative;
+}
+header .navbar {
+  padding: 0 1.5rem;
+  text-align: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+header .navbar .navbarLeft {
+  left: 0;
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+header .navbar .navbarLeft ul {
+  display: flex;
+  align-items: center;
+}
+header .navbar .navbarLeft ul li {
+  list-style: none;
+  padding: 0 2rem;
+  margin: 0;
+}
+header .navbar .navbarLeft ul li a {
+  display: block;
+  padding: 1.7rem 1.4rem;
+  font-size: 1em;
+}
+header .navbar .logo {
+  padding: 1rem 1rem;
+}
+header .navbar .logo img {
+  width: 6em;
+  height: 2.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .navbar .navbarRight {
+  right: 0;
+  padding-left: 1.5rem;
+}
+header .navbar .navbarRight ul {
+  display: flex;
+  align-items: center;
+}
+header .navbar .navbarRight ul li {
+  list-style: none;
+  padding: 0 2rem;
+  margin: 0;
+}
+header .navbar .navbarRight ul li a {
+  display: block;
+  padding: 1.7rem 1.4rem;
+  font-size: 1em;
+}
+header .navbar .iconos a {
+  display: block;
+  padding: 1.7rem 1.4rem;
+  position: absolute;
+  right: 16px;
+}
+header .navbar .iconos a .icon {
+  display: block;
+  width: 1.15em;
+  height: 1.15em;
+}
 
-  .banner {
-    height: 100vh;
-    width: 100vw;
-  }
-  .banner .contenedorBanner {
-    height: 100%;
-    padding: 4rem;
-    background-color: #B8D9D0;
-    position: relative;
-    margin-left: auto;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    display: flex;
-  }
-  .banner .contenedorBanner div {
-    width: 53%;
-    height: auto;
-  }
-  .banner .contenedorBanner div .tituloBanner {
-    margin-bottom: 3rem;
-    width: 100%;
-  }
-  .banner .contenedorBanner div .tituloBanner h1 {
-    font-size: 8rem;
-    width: 100%;
-    line-height: 120%;
-    padding-bottom: 2rem;
-  }
-  .banner .contenedorBanner div .tituloBanner h2 {
-    font-size: 1.5rem;
-    font-weight: 100;
-    width: 100%;
-  }
-  .banner .contenedorBanner div .boton {
-    padding: 20px 72px;
-    background-color: #F2798F;
-    color: white;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: 22px;
-    text-decoration: inherit;
-  }
-  .banner .contenedorBanner img {
-    height: auto;
-    width: 40vw;
-    display: block;
-    z-index: 20;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    bottom: -8rem;
-    max-width: 100%;
-  }
+.banner {
+  height: 100vh;
+  width: 100vw;
+}
+.banner .contenedorBanner {
+  height: 100%;
+  padding: 4rem;
+  background-color: #B8D9D0;
+  position: relative;
+  margin-left: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+}
+.banner .contenedorBanner div {
+  width: 53%;
+  height: auto;
+}
+.banner .contenedorBanner div .tituloBanner {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+.banner .contenedorBanner div .tituloBanner h1 {
+  font-size: 8rem;
+  width: 100%;
+  line-height: 120%;
+  padding-bottom: 2rem;
+}
+.banner .contenedorBanner div .tituloBanner h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  width: 100%;
+}
+.banner .contenedorBanner div .boton {
+  padding: 20px 72px;
+  background-color: #F2798F;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 22px;
+  text-decoration: inherit;
+}
+.banner .contenedorBanner img {
+  height: auto;
+  width: 40vw;
+  display: block;
+  z-index: 20;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  bottom: -8rem;
+  max-width: 100%;
 }/*# sourceMappingURL=estilos.css.map */

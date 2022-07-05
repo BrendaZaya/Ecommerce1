@@ -1,0 +1,127 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 1.75;
+    font-family: Nexa,Helvetica,Arial,sans-serif;
+}
+
+/* ------------colores--------------*/
+
+    $colorPrimario: #B8D9D0;
+    $colorcta: #F2798F;
+    $colorBlanco: #fefefe;
+    $colorNegro: #111111;
+    $colorSecundario: #faf8f4;
+    $rosa: #ffbeca;
+
+
+    /* ------------tipografías--------------*/
+
+    $fontDestacada: ('six caps', Verdana, Geneva, Tahoma, sans-serif);
+    $fontPrincipal : ('lato', Verdana, Geneva, Tahoma, sans-serif);
+
+/* ------------barra de navegación--------------*/
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fefefe;
+    position: relative;
+
+    .navbar {
+        padding: 0 1.5rem;
+        text-align: center;
+        display: flex;
+        position: relative;
+        justify-content: center;
+
+        .navbarLeft {
+            left: 0;
+            padding-right: 1.5rem;
+            display: flex;
+            justify-content: flex-end;
+
+            ul {
+                display: flex;
+                align-items: center;
+                
+                li {
+                    list-style: none;
+                    padding: 0 2rem;
+                    margin: 0;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        display: block;
+                        padding: 1.7rem 1.4rem;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        .logo {
+                padding: 1rem 1rem;
+
+                img {
+                    width: 6em;
+                    height: 2.5em;
+                    object-fit: cover;
+                }
+        }
+
+        .navbarRight {
+            right: 0;
+            padding-left: 1.5rem;
+
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    list-style: none;
+                    padding: 0 2rem;
+                    margin: 0;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        display: block;
+                        padding: 1.7rem 1.4rem;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        .iconos {
+            a {
+                display: block;
+                padding: 1.7rem 1.4rem;
+                position: absolute;
+                right: 16px;
+
+                .icon {
+                    display: block;
+                    width: 1.15em;
+                    height: 1.15em;
+                }
+            }
+        }
+    }
+}
+
+/* ------------Subtitulos--------------*/
+
+.titulo {
+    text-align: center;
+    font-size: 42px;
+    font-family: $fontPrincipal;
+    font-weight: 400;
+    padding: 2rem;
+}

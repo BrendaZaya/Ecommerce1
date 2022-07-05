@@ -189,7 +189,7 @@
         let total = 0;
         let seguirComprando = '';
         do {
-            let nombreProducto = prompt("¿Que cerveza querés comprar? (honey, ipa, golden, pilsen").toUpperCase();
+            let nombreProducto = prompt("¿Que cerveza querés comprar? (honey, ipa, golden, pilsen, barley wine, kolch, neipa, porter, irish, etc)").toUpperCase();
 
             let cantidad = parseInt(prompt (`¿Cuantas latas de ${nombreProducto} querés agregar al carrito?`));
 

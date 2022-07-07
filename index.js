@@ -168,10 +168,6 @@
         }
     ]
     
-    // precio total de todos los productos
-
-    const total = productos.reduce((acumulador, elemento) => acumulador + elemento.precio, 0);
-    console.log(total);
 
     // Validar edad
 
@@ -248,10 +244,34 @@
         }
     }
 
+    // DOM saludo
+
+    function validarEdad() {
+        if (confirm("Para poder acceder a este contenido, necesitamos validar tu edad. ¿Sos mayor de 18?") == true) {
+            let saludo = document.getElementById("saludo");
+            saludo.innerHTML = "Bienvenido";
+        } else {
+            alert("Lo sentimos, no podés ingresar");
+        }
+    }
+
+    function usuarioRegistrado() {
+        let registro = prompt("¿Estás registrado?").toUpperCase();
+
+        if (registro === "SI") {
+            let usuario = prompt("Ingresá tu nombre de usuario").toUpperCase();
+            let bienvenida = document.getElementById("tituloContacto");
+            bienvenida.innerHTML = usuario + " dejanos tu mensaje";
+        } else {
+            alert ("Podés registrarte para contactarnos");
+        }
+    }
+
     validarEdad()
-    simuladorCompra()
-    buscador()
-    filtro()
+    usuarioRegistrado();
+    // simuladorCompra()
+    // buscador()
+    // filtro()
 
 
 

@@ -14,7 +14,7 @@
     //     padding: 2rem;
     // }
 
-    .productos {
+    .contenedorProductos {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -35,7 +35,7 @@
                 transition: .6s all cubic-bezier(.83,0,.17,1);
             }
 
-            &:hover .img {
+            &:hover .imgContenedor {
                 transform: translateY(-50px);
                 transition: .4s all cubic-bezier(.83,0,.17,1);
             }
@@ -75,12 +75,14 @@
                     font-weight: 500;
                     line-height: 3.1rem;
                     font-family: $fontDestacada;
+                    color: $colorNegro;
+                    text-shadow: 0px 0px 2px $colorBlanco;
                     text-transform: uppercase;
                     transition: .6s all cubic-bezier(.83,0,.17,1);
                 }
             }
 
-            .img {
+            .imgContenedor {
                 width: 100%;
                 height: 50%;
                 cursor: pointer;
@@ -106,11 +108,11 @@
                 .especificaciones {
                     width: 100%;
 
-                    ul {
+                    .ul {
                         list-style: none;
                         display: flex;
 
-                        li {
+                        .ibu, .abv, .cc {
                             width: 100%;
                             padding: 10px;
                             text-align: center;
@@ -123,7 +125,7 @@
                     }
                 }
 
-                button {
+                .botonAgregar {
                     height: 42px;
                     width: 96%;
                     margin: 12px 0;
@@ -132,6 +134,7 @@
                     font-size: 14px;
                     display: flex;
                     justify-content: space-around;
+                    align-items: center;
                     border: none;
                     border-radius: 2px;
                     cursor: pointer;
@@ -142,11 +145,12 @@
                         transition: .4s all;
                     }
 
-                    p {
+                    .agregarAlCarrito {
                         font-size: 14px;
                         text-align: center;
                         margin: 8px;
                         font-family: $fontPrincipal;
+                        text-transform: uppercase;
                     }
 
                     .precio {
@@ -158,7 +162,7 @@
                     width: 90%;
                     text-align: center;
 
-                    p {
+                    .textoDescriptivo {
                         font-size: 12px;
                         font-family: $fontPrincipal;
                     }

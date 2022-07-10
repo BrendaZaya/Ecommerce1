@@ -158,7 +158,7 @@ header .navbar .iconos a .icon {
   background-color: #faf8f4;
   padding: 2vh;
 }
-.seccionProductos .productos {
+.seccionProductos .contenedorProductos {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -166,7 +166,7 @@ header .navbar .iconos a .icon {
   gap: 10px;
   padding: 16px;
 }
-.seccionProductos .productos .producto {
+.seccionProductos .contenedorProductos .producto {
   background-color: #ffbeca;
   display: flex;
   flex-direction: column;
@@ -174,19 +174,19 @@ header .navbar .iconos a .icon {
   justify-content: space-between;
   transition: 0.4s all cubic-bezier(0.83, 0, 0.17, 1);
 }
-.seccionProductos .productos .producto:hover h2 {
+.seccionProductos .contenedorProductos .producto:hover h2 {
   transform: translateY(-100px);
   transition: 0.6s all cubic-bezier(0.83, 0, 0.17, 1);
 }
-.seccionProductos .productos .producto:hover .img {
+.seccionProductos .contenedorProductos .producto:hover .imgContenedor {
   transform: translateY(-50px);
   transition: 0.4s all cubic-bezier(0.83, 0, 0.17, 1);
 }
-.seccionProductos .productos .producto:hover {
+.seccionProductos .contenedorProductos .producto:hover {
   background-color: #faf8f4;
   transition: 0.4s all cubic-bezier(0.83, 0, 0.17, 1);
 }
-.seccionProductos .productos .producto .tituloProducto {
+.seccionProductos .contenedorProductos .producto .tituloProducto {
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
@@ -194,18 +194,18 @@ header .navbar .iconos a .icon {
   align-items: center;
   position: relative;
 }
-.seccionProductos .productos .producto .tituloProducto .iconoContainer {
+.seccionProductos .contenedorProductos .producto .tituloProducto .iconoContainer {
   position: absolute;
   transform: translate(-50%, -10%);
   left: 50%;
 }
-.seccionProductos .productos .producto .tituloProducto .iconoContainer .icono {
+.seccionProductos .contenedorProductos .producto .tituloProducto .iconoContainer .icono {
   display: block;
   height: auto;
   width: auto;
   max-height: 5rem;
 }
-.seccionProductos .productos .producto .tituloProducto h2 {
+.seccionProductos .contenedorProductos .producto .tituloProducto h2 {
   position: relative;
   z-index: 2;
   max-width: 90%;
@@ -213,38 +213,40 @@ header .navbar .iconos a .icon {
   font-weight: 500;
   line-height: 3.1rem;
   font-family: "six caps", Verdana, Geneva, Tahoma, sans-serif;
+  color: #111111;
+  text-shadow: 0px 0px 2px #fefefe;
   text-transform: uppercase;
   transition: 0.6s all cubic-bezier(0.83, 0, 0.17, 1);
 }
-.seccionProductos .productos .producto .img {
+.seccionProductos .contenedorProductos .producto .imgContenedor {
   width: 100%;
   height: 50%;
   cursor: pointer;
   position: relative;
   transition: 0.4s all cubic-bezier(0.83, 0, 0.17, 1);
 }
-.seccionProductos .productos .producto .img img {
+.seccionProductos .contenedorProductos .producto .imgContenedor img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
 }
-.seccionProductos .productos .producto .infoProducto {
+.seccionProductos .contenedorProductos .producto .infoProducto {
   background-color: #ffbeca;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.seccionProductos .productos .producto .infoProducto .especificaciones {
+.seccionProductos .contenedorProductos .producto .infoProducto .especificaciones {
   width: 100%;
 }
-.seccionProductos .productos .producto .infoProducto .especificaciones ul {
+.seccionProductos .contenedorProductos .producto .infoProducto .especificaciones .ul {
   list-style: none;
   display: flex;
 }
-.seccionProductos .productos .producto .infoProducto .especificaciones ul li {
+.seccionProductos .contenedorProductos .producto .infoProducto .especificaciones .ul .ibu, .seccionProductos .contenedorProductos .producto .infoProducto .especificaciones .ul .abv, .seccionProductos .contenedorProductos .producto .infoProducto .especificaciones .ul .cc {
   width: 100%;
   padding: 10px;
   text-align: center;
@@ -253,7 +255,7 @@ header .navbar .iconos a .icon {
   font-weight: 600;
   text-transform: uppercase;
 }
-.seccionProductos .productos .producto .infoProducto button {
+.seccionProductos .contenedorProductos .producto .infoProducto .botonAgregar {
   height: 42px;
   width: 96%;
   margin: 12px 0;
@@ -262,29 +264,31 @@ header .navbar .iconos a .icon {
   font-size: 14px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border: none;
   border-radius: 2px;
   cursor: pointer;
   transition: 0.4s all;
 }
-.seccionProductos .productos .producto .infoProducto button:hover {
+.seccionProductos .contenedorProductos .producto .infoProducto .botonAgregar:hover {
   background-color: rgb(255, 238, 238);
   transition: 0.4s all;
 }
-.seccionProductos .productos .producto .infoProducto button p {
+.seccionProductos .contenedorProductos .producto .infoProducto .botonAgregar .agregarAlCarrito {
   font-size: 14px;
   text-align: center;
   margin: 8px;
   font-family: "lato", Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
 }
-.seccionProductos .productos .producto .infoProducto button .precio {
+.seccionProductos .contenedorProductos .producto .infoProducto .botonAgregar .precio {
   font-weight: 700;
 }
-.seccionProductos .productos .producto .infoProducto .descripcionProducto {
+.seccionProductos .contenedorProductos .producto .infoProducto .descripcionProducto {
   width: 90%;
   text-align: center;
 }
-.seccionProductos .productos .producto .infoProducto .descripcionProducto p {
+.seccionProductos .contenedorProductos .producto .infoProducto .descripcionProducto .textoDescriptivo {
   font-size: 12px;
   font-family: "lato", Verdana, Geneva, Tahoma, sans-serif;
 }

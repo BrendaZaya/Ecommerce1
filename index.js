@@ -1,14 +1,27 @@
 
-    // Validar edad
+    // botones de confirmacion de edad 
 
-    function validarEdad() {
-        if (confirm("Para poder acceder a este contenido, necesitamos validar tu edad. ¿Sos mayor de 18?") == true) {
-            alert("Te damos la bienvenida");
-        } else {
-            alert("Lo sentimos, no podés ingresar");
+    const mayor = document.getElementById("mayorDeEdad");
+    const menor = document.getElementById("menorDeEdad");
+    const contenedorModal = document.getElementById("contenedorModal");
+
+    function verificarEdad() {
+
+        mayor.addEventListener("click", respuestaClick);
+        function respuestaClick () {
+            contenedorModal.classList.remove('contenedorModal');
+        }
+
+        menor.addEventListener("click", salirDelSitio);
+        function salirDelSitio () {
+            window.location = "https://www.youtube.com/watch?v=ZAAjm4IJhFY";
         }
     }
 
+    
+
+
+// traer al contenedor de las tarjetas
 
 const contenedorProductos = document.querySelector('.contenedorProductos');
 
@@ -125,5 +138,6 @@ try {
     console.log(e);
 }
 
+// llamada a la funcion
 
-
+verificarEdad();

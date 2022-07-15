@@ -1,26 +1,4 @@
 
-    // botones de confirmacion de edad 
-
-    const mayor = document.getElementById("mayorDeEdad");
-    const menor = document.getElementById("menorDeEdad");
-    const contenedorModal = document.getElementById("contenedorModal");
-
-    function verificarEdad() {
-
-        mayor.addEventListener("click", respuestaClick);
-        function respuestaClick () {
-            contenedorModal.classList.remove('contenedorModal');
-        }
-
-        menor.addEventListener("click", salirDelSitio);
-        function salirDelSitio () {
-            window.location = "https://www.youtube.com/watch?v=ZAAjm4IJhFY";
-        }
-    }
-
-    
-
-
 // traer al contenedor de las tarjetas
 
 const contenedorProductos = document.querySelector('.contenedorProductos');
@@ -138,6 +116,42 @@ try {
     console.log(e);
 }
 
-// llamada a la funcion
 
-verificarEdad();
+// verificador de edad
+
+const mayor = document.getElementById("mayorDeEdad");
+const menor = document.getElementById("menorDeEdad");
+document.getElementById("contenedorModal").style.display= "none";
+let validarEdad;
+const validacionStorage = sessionStorage.getItem('validarEdad');
+
+
+function abrirVentana() {
+    /*mostrar modal*/
+    document.getElementById("contenedorModal").style.display= "block";
+}
+
+function respuestaClick () {
+    /*ocultar modal*/
+        contenedorModal.classList.remove('contenedorModal');
+}
+
+function salirDelSitio () {
+    /*llevar a otro sitio y limpiar storage*/
+    window.location = "https://www.youtube.com/watch?v=ZAAjm4IJhFY";
+    sessionStorage.clear("validarEdad", validarEdad);
+}
+
+mayor.addEventListener("click", respuestaClick);
+menor.addEventListener("click", salirDelSitio);
+
+if (validacionStorage) {
+    /*si no está guardado la validacion*/
+    respuestaClick();
+    validarEdad = validacionStorage;
+} else {
+    /*si está guardada la validacion*/
+    validarEdad = setTimeout(abrirVentana, 3000);
+    sessionStorage.setItem("validarEdad", validarEdad);
+}
+
